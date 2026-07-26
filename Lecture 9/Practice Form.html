@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Firs Example for Creating a form -->
+    <h2>Event Registration</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <br><br>
+
+
+        <label for="email">Email Id:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <label for="phone">Phone No:</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+        <label for="OccupationType">Occupation</label><br><br>
+        <select name="OccupationType" id="OccupationType">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <fieldset>
+            <legend>Topics of Interest</legend>
+
+            <label for="checkbox1">Web Development</label>
+            <input type="checkbox" name="checkbox" id="checkbox1">
+
+            <label for="checkbox2">Data Science</label>
+            <input type="checkbox" name="checkbox" id="checkbox2">
+
+            <label for="checkbox3">Python Developer</label>
+            <input type="checkbox" name="checkbox" id="checkbox3">
+
+
+
+        </fieldset>
+        <br><br>
+        <label for="Comments">Comments:</label><br><br>
+        <textarea name="textarea1" id="textarea1">
+
+        </textarea>
+        <input type="submit" value="Register">
+    </form>
+</body>
+
+</html>

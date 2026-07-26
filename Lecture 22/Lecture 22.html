@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 22
+
+    </title>
+    <style>
+        :root {
+            --primary-color: blue;
+            --custom-width: 330px;
+        }
+
+        .container {
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .box {
+
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 10px 15px brown; */
+            /* x-axis, y-axis, color*/
+            /* box-shadow: -10px 15px brown; */
+            /* box-shadow: -10px -60px magenta; */
+            /* Box shadow using blur radius only write positive value for blur radius */
+            /* box-shadow: 10px 15px 5px brown; */
+            /* Spread radius */
+            /* box-shadow: 10px 15px 5px 100px brown; */
+            /* box-shadow: inset 10px 15px brown; */
+            /* multple shadow add */
+            box-shadow: 10px 15px red, 15px 8px green;
+            /* Syntax of Create of custom variable */
+            --primary-color: blue;
+            --custom-width: 330px;
+
+
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        #head1 {
+            /* First Syntax */
+            /* text-shadow: 12px 13px 2px white; */
+            /* Second syntax */
+            /* text-shadow: yellow 12px 13px 20px; */
+            /* Third Syntax */
+            text-shadow: white 12px 13px;
+
+            /* fourth syntax */
+            text-shadow: 12px 13px;
+            /* By defaul shadow color: black */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Box Shadow -->
+    <div class="container">
+        <div class="box">
+            <img src="logo copy.png">
+            <h2 id="head1">Welcome to my website</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius maiores atque, architecto officia ad rem ex
+                sequi unde voluptatem fugit!</p>
+        </div>
+    </div>
+    <!-- Text Shadow -->
+
+
+</body>
+
+</html>

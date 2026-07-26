@@ -1,0 +1,142 @@
+<!-- HTML Form : Structure of HTML Form- To collect user input 
+ Tags: 
+    <form> : Container for form elements
+    <input> : Various types of input fields (text, password, checkbox, radio, etc.)
+    <label> : Label for form elements, Create label for input fields for attibute = for="id of input field"
+    
+    input type=" "
+    type='text' : To create text input field
+    type='radio' : To create radio button
+    type='checkbox' : To create checkbox    
+    type='date' : To create date input field
+    id=" " : To uniquely identify an element, used for label association and scripting
+    name=" " : To group related form elements, especially for radio buttons and checkboxes
+
+    select - dropdown list
+    button - clickable button, can be used for form submission or other actions
+    textarea - multi-line text input field
+    fieldset - group related elements in a form, often used with legend to provide a caption for the group
+    legend - provides a caption for a fieldset, used to describe the purpose of the grouped elements
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="Email"> Enter Email Id</label>
+        <input type="text" id="Email" Placeholder="Enter your email id">
+
+        <br><br>
+        <label for="Password"> Enter Password</label>
+        <input type="text" id="Password">
+        <br><br>
+        <input type="submit" value="Click Here">
+        <button type="button" value="Submit">Submit</button>
+
+    </form>
+
+    <br>
+
+
+
+    <form>
+        <fieldset>
+            <legend> HTML Form Dummy</legend>
+            <label for="datapicker">Choose Date: </label>
+            <input type="date" id="datepicker">
+    </form>
+    <br><br>
+    <!-- To create a dropdown list -->
+    <select name="dishes" id="selector1">
+        <option value="maggi1">Maggi</option>
+        <option value="Kurkure">Kurkure</option>
+        <option value="lays">Lays</option>
+        <option value="doritos">Doritos</option>
+    </select>
+    <br><br>
+    <!-- Create a button -->
+    <button>Button here </button>
+
+    <br><br>
+    <!-- Create a textarea -->
+    <textarea name="textarea1" id="textarea1" cols="25" rows="10" placeholder="enter text here.!"></textarea>
+    </fieldset>
+
+
+    <!-- Homework: How to select multiple option in a dropdown  -->
+
+    <!-- Input Types: 
+     <input> : textfieled 
+     <input>: button
+        <input>: checkbox
+        <input>: radio
+        <input>: file select 
+        <input>: image
+        <input> :password textfield 
+        <input>: date picker
+        https://www.w3schools.com/html/html_form_input_types.asp
+     -->
+    <br><br>
+
+    <form>
+        <label for="textfield">TextField: </label>
+        <input type="text" name="textfield" id="textfield"> <!-- by detfaul text type-->
+
+        <br><br>
+        <label for="button1">Button: </label>
+        <input type="submit" name="button1" id="button1" value="Subscribe">
+
+
+        <br><br>
+        <label for="radio1">Male </label>
+        <input type="radio" name="radio1" id="radio1">
+
+
+
+        <label for="radio2">Female: </label>
+        <input type="radio" name="radio2" id="radio2">
+
+
+        <label for="radio3">Other: </label>
+        <input type="radio" name="radio3" id="radio3">
+        <!-- homework: how to find the code , only select one radio button-->
+        <br><br>
+
+
+        <!--   checkbox 
+           -->
+        <label for="checkbox1">English </label>
+        <input type="checkbox" name="checkbox1" id="radio2">
+
+
+        <label for="checkbox2">Hindi </label>
+        <input type="checkbox" name="checkbox2" id="radio2">
+        <br><br>
+        <!-- TO select file-->
+        <label for="fileselect1">Upload File: </label>
+        <input type="file" name="fileselect1" id="fileselect1">
+        <br><br>
+        <!-- To select image -->
+
+        <input type="image" name="imageselect1" id="imageselect1" alt="click here" src="image.png" width="200"
+            height="200">
+
+        <br><br>
+        <!-- To create password field -->
+        <label for="Password1"> Enter Password: </label>
+        <input type="password" name="password1" id="Password1">
+        <br> <br>
+        <!-- To create date picker -->
+        <label for="datepicker1">Choose Date: </label>
+        <input type="date" name="datepicker1" id="datepicker1">
+    </form>
+</body>
+
+</html>

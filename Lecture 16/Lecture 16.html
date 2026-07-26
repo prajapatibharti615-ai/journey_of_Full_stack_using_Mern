@@ -1,0 +1,91 @@
+<!-- CSS Display Property: 
+ What is Display? - 
+ Block Elements: div, p, h1,
+ Property of Block element:
+ 1. New Line
+ 2. default width  extreme left se leker extreme right tak leker saara space le lete hai 
+ 3. Custom Height and width ko respect karta hai
+ 4. Custom Margin/padding ko bhi respect karte hai
+ Homework: What is the 10 different block element in HTMl? 
+
+
+ Inline Tag: a, span tag
+    property of Inliine: 
+    1. Try in same line
+    2. width - content ki width hogi utni hi width hogi 
+    3 custom width/height  not apply
+    4. not apply custom margin ! 
+    Different between Block and Inline?
+    We can convert block element into inline element, and inline element into blockelement 
+    combination of inline and block- 
+    display: inline-block;
+    behave - inline element
+    custom height and width we can set.
+ 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 5px;
+            padding: 0;
+            box-sizing: border-box;
+            /* Actual Size using box-sizing  */
+
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            padding: 100px;
+            display: inline;
+        }
+
+        span {
+            border: 2px sOlid green;
+            width: 500px;
+            height: 150px;
+            margin: 20px;
+            padding: 15px;
+            display: inline-block;
+            /* display: block; */
+        }
+
+        div {
+            border: solid red;
+            width: 300px;
+            height: 300px;
+            margin: 25px;
+            padding: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Welcome to My Website
+    </div>
+    <div>
+        Welcome to my second website
+    </div>
+
+    <div class="box">
+        welcome to code help
+    </div>
+
+    <span>
+        This is Bharti Prajapati.!
+    </span>
+    <span>
+        This is Student of BCA Bharti Prajapati
+    </span>
+</body>
+
+</html>

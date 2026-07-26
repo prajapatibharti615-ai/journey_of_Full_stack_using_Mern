@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Practice</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* overflow: hidden; */
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background: #833AB4;
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 22%, rgba(227, 197, 197, 1) 50%, rgba(199, 46, 230, 1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        .box {
+            width: 400px;
+            height: 600px;
+            background-color: white;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2px;
+        }
+
+        .box img {
+            height: 50%;
+            /* width: 60%; */
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            margin: 2px;
+            padding: 2px;
+
+        }
+
+        .box h2 {
+            font-weight: bold;
+            font-size: 2rem;
+
+        }
+
+        .box p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <img src="images/qrcode.jpg" />
+            <h2>Improve my skills</h2>
+            <p>Enhance your abilities with our comprehensive courses.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

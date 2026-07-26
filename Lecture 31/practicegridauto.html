@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Practice GRIDAUTO PAGE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+
+        }
+
+        .headone {
+            text-align: center;
+            font-size: 40px;
+            background-color: black;
+            color: whitesmoke;
+        }
+
+
+        .container {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            gap: 1rem;
+            background-color: rgb(175, 208, 226);
+            margin-right: 2rem;
+            padding: 2rem;
+            grid-template-columns: 1fr 2fr 1fr;
+
+            grid-template-rows: 80px 150px 150px 150px 80px;
+            grid-template-areas: "header header header"
+                "sidebar content1 content1"
+                "sidebar content2 sidebar1"
+                "sidebar content3 sidebar1"
+                "footer footer footer";
+
+        }
+
+        .item {
+            /* background-color: rgb(234, 227, 229); */
+            /* height: 50px; */
+            /* border: 1px solid black; */
+            border-radius: 5px;
+            padding: 1rem;
+            color: black;
+            margin: 1rem;
+
+
+        }
+
+
+
+        #header {
+            grid-area: header;
+            /* height: 100px;
+            padding: 2rem;
+            margin: 2rem; */
+        }
+
+        #header h1 {
+            text-align: center;
+            color: rgb(13, 13, 86);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            justify-content: center;
+            margin-bottom: 12px;
+            font-size: 30px;
+            line-height: 1.0;
+        }
+
+
+
+        #sidebar {
+            grid-area: sidebar;
+        }
+
+
+        #sidebar {
+            grid-area: sidebar;
+            padding: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .sidebar_image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .sidebar_image:hover {
+            transform: scale(1.08);
+        }
+
+        #content1 {
+            grid-area: content1;
+
+        }
+
+        #content1 h2 {
+            color: #1f3b8f;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        #content1 p {
+            text-align: justify;
+            line-height: 1.1;
+            font-size: 16px;
+        }
+
+        #content2 {
+            grid-area: content2;
+        }
+
+        #content2 h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #0d2365
+        }
+
+        #content3 {
+            grid-area: content3;
+        }
+
+        #sidebar1 {
+            grid-area: sidebar1;
+        }
+
+        /* .sidebar1_image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+
+        } */
+
+        #footer {
+
+            grid-area: footer;
+        }
+
+        #footer h3 {
+            text-align: center;
+            color: #7b0552ed
+        }
+    </style>
+</head>
+
+
+<body>
+    <h2 class="headone">Grid Layout</h2>
+
+    <div class="container">
+
+
+        <div class="item" id="header">
+            <h1>Explore the Power of CSS Grid Layout</h1>
+
+        </div>
+        <div class="item" id="sidebar">
+
+            <img class="sidebar_image" src="sidebar.png" alt="header" />
+        </div>
+        <div class="item" id="content1">
+            <h2>What is Grid Layout?</h2>
+
+            <p>
+                CSS Grid Layout is a powerful two-dimensional layout system that allows developers
+                to create complex and responsive web page structures with ease. By defining rows,
+                columns, and grid areas, it becomes simple to organize content without relying on
+                floats or excessive positioning. Grid Layout improves code readability, enhances
+                responsiveness, and provides complete control over the placement of web elements,
+                making it one of the most important tools in modern web development.
+            </p>
+        </div>
+        <div class="item" id="content2">
+
+            <h2>Why Use CSS Grid?</h2>
+
+            <p>
+                CSS Grid makes it easier to build responsive websites with clean and organized
+                code. It allows developers to create flexible layouts that automatically adapt
+                to different screen sizes. By using rows, columns, and grid areas, designers can
+                arrange content efficiently while reducing the need for complicated CSS
+                positioning techniques.
+            </p>
+        </div>
+        <div class="item" id="content3">
+            <h2>Real-World Applications</h2>
+
+            <p>
+                CSS Grid is widely used in modern websites such as dashboards, blogs,
+                e-commerce platforms, portfolios, news websites, and administrative panels.
+                Its ability to organize multiple sections into a structured layout helps create
+                visually appealing, responsive, and user-friendly web interfaces for all
+                devices.
+            </p>
+        </div>
+        <div class="item" id="sidebar1">
+            <img class="sidebar_image" src="sidebar1.png">
+        </div>
+        <div class="item" id="footer">
+            <h3>Created by Bharti Prajapati | Full Stack Web Development Journey</h3>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

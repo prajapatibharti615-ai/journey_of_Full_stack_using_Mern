@@ -1,0 +1,94 @@
+<!-- CSS Position Property:
+ Static
+ relative
+ absolute
+ fixed
+ sticky
+What is CSS position property: The position css property sets how an element is positioned in a document. 
+The Top, Right, Bottoom, Left properties determine the final location of positioned elements. 
+By default position: static
+
+/* relative position property is change the position 
+        Observation of relative position property:
+        window observer
+        top, left, right, bottom (spacing define)
+        gap maintained
+
+        */
+
+        /* absolute Property: no maintain gap
+        closest 
+        overlap
+        relative to its closest positioned ancestor
+        no gap maintained 
+        we can use top,left,botto, right 
+        */
+        /* Fixed Position: Entire website 
+        
+        */
+        /* Sticky Position: related to parent container /element */
+        /* different between fixed position and sticky poition */
+
+Homework Question: Kya Image tag inline element hai ya block element hai? 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            height: 800px;
+            background-color: bisque;
+        }
+
+        div {
+            border: 1px solid;
+        }
+
+        img {
+            margin: 10px;
+        }
+
+        .imag2 {
+            /* top: 100px;
+            position: relative;
+            left: 200px; */
+            /* position: absolute;
+            top: 100px; */
+
+        }
+
+        .imag3 {
+            position: sticky;
+            top: 100px;
+        }
+
+        .imag4 {
+            position: fixed;
+        }
+
+        .box {
+            background-color: aquamarine;
+            height: 5000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="imag1" src="img1.jpg" alt="image" width="300px" height="300px" />
+        <img class="imag2" src="img2.png" alt="image" width="300px" height="300px" />
+        <img class="imag3" src="img3.jpg" alt="image" width="300px" height="300px" />
+        <img class="imag4" src="img4.jpg" alt="image" width="300px" height="300px" />
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!--  Css Size units: 
+-pm
+- %
+- vw
+- em
+- and rem
+What is Size Units?   
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: solid 3px green;
+            background-color: beige;
+            /* width: 50%; */
+            width: 100%;
+
+        }
+
+        .parent {
+            border: 1px solid black;
+            background-color: blue;
+            width: 50%;
+
+        }
+
+        .child {
+            border: 1px solid black;
+            background-color: magenta;
+            width: 25%;
+
+        }
+
+        .container {
+            background-color: bisque;
+            border: 2px solid magenta;
+            height: 300vh;
+            width: 50vw;
+        }
+
+        .container1 {
+            border: 3px solid orange;
+            background-color: magenta;
+            height: 300vh;
+            width: 50vh;
+        }
+
+        .pixel {
+            border: 4px dotted magenta;
+            font-size: 100px;
+
+        }
+
+        .em {
+            font-size: 10px;
+
+        }
+
+        .em1 {
+            font-size: 10em;
+        }
+
+        .firstpara {
+            border: 1px solid black;
+            font-size: 5rem;
+            /* By default 16pixel */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Bharti Prajapati
+    </div>
+    <div class="parent">
+        <div class="child">
+            CHILD
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        This is example of vh and vw property
+
+        <div class="container1">
+            This is Vh and vw property
+        </div>
+    </div>
+    <hr /><br>
+    <div class="pixel">This is the pixel property </div>
+    <hr /><br>
+
+    <div class="em">
+        <div class="em1">
+            This is the em property
+        </div>
+
+    </div>
+    <div class="firstpara">This the property of rem</div>
+
+</body>
+
+</html>

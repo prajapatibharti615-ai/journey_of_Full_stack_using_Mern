@@ -1,0 +1,298 @@
+<!-- Html in speed: emmet is a software it be default plugin in system and extension - shortcut : full code , to speed of
+html code with the help of emmet we can write html code in very short time and it will automatically convert into full
+code. for example if we want to write 5 paragraph then we can write p*5 and it will automatically convert into full code
+of 5 paragraph. like this :
+
+//p>p>p>p -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- p>img it will automatically convert into full code of p tag with img tag inside it. like this : -->
+    <!-- <p>
+        <img src="" alt="">
+    </p>
+      p>p>p>p it will automatically convert into full code of 4 p tag inside each other. like this :
+  <p>
+    <p>
+        <p>
+            <p></p>
+        </p>
+    </p>
+  </p>
+
+  <p>
+    <h1>
+
+    </h1>
+  </p>  -->
+
+    <!--table>tr>td*2 it will automatically convert into full code of table with tr and td tag inside it. like this : -->
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- ol>li*4 it will automatically convert into full code of ol with li tag inside it. like this : -->
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+    <!--ul>li it will automatically convert into full code of ul with li tag inside it. like this : -->
+    <ul>
+        <li></li>
+    </ul>
+
+    <!-- article+section it will automatically convert into full code of article and section tag. like this : -->
+    <!-- article+section -->
+    <article></article>
+    <section></section>
+
+    <!--p{this is text} it will automatically convert into full code of p tag with text inside it. like this : -->
+    <p>this is text</p>
+    <h1>this is heading</h1>
+    <article> This is my first article</article>
+    <section> This is my first section</section>
+
+    <!-- if we want to create Id then we can write paragraoh#para1 and it will automatically convert into full code with -->
+    <!-- id -->
+    <!-- para1 -->
+    <!-- if we want to create id then we can write article#article1 and it will automatically convert into full code with -->
+    <!-- id article1 -->
+    <!-- if we want to create id then we can write section#babbar and it will automatically convert into full code with id -->
+    <!-- babbar -->
+
+    <!--p#id 1 it will automatically convert into full code of p tag with id inside it. like this : -->
+    <p id="id1"></p>
+    <p><a href="">Link</a> </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+
+    <p id="para1">This is the paragraph with ID 'para1'</p>
+    <article id="article1"></article>
+    <section id="babbar"></section>
+
+    <!-- p.love if we want to create class then we can write p.para and it will automatically convert into full code with
+    class -->
+    <!-- para. -->
+    <p class="para">This is</p>
+
+    <article class="dog"></article>
+    <section class="lion cat"></section> <!-- //multiple class name with space in between -->
+
+    <!--  Element Grouping -->
+    <p>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+    </ul>
+    </p>
+
+    <!-- p+article+section -->
+    <p></p>
+    <article></article>
+    <section></section>
+
+    <!-- section>p+p+p -->
+    <section>
+        <p></p>
+        <p></p>
+        <p></p>
+    </section>
+
+    <section>
+        <p></p>
+        <p></p>
+        <p></p>
+    </section>
+
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- table>(tr>td*5)*2 -->
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
+
+    <!--section>(ul>li*2)+footer-->
+    <!--section>(ul>li*2)+footer-->
+    <section>
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+        <footer></footer>
+    </section>
+
+    <!--
+     Div tag : to create division in html we can use div tag. it is a generic container tag and wrapping container
+    which is used to group elements
+    together. it is a block level element. it is used to apply css styles to a group of elements. it is also used to
+    create layout of the webpage. like this :
+    //1. block element : it takes full width of the parent element and starts from a new line. like this : next line ,
+    left to right take space by default
+    //2. inline element : it takes only the width of the content and does not start from a new line. like this : no next
+    line -->
+
+
+
+    <div class="con"></div>
+    //div.container
+    <div class="con">
+        <p>This is a paragraph inside a div.</p>
+        <img src="" alt="">
+
+    </div>
+
+    .wrapper
+    <div class="wrapper">
+        <h1>This is a heading inside a wrapper div.</h1>
+        <p>This is a paragraph inside a wrapper div.</p>
+    </div>
+
+    <div style="Background-color: aqua;"> This is my First Div</div> <!-- by default div is block element so it will take
+    full width of the parent element and starts from a new line. like this : next line , left to right take space by
+    default -->
+    <span style="background-color: yellow;"> This is my First Span</span>
+    <!-- by default span is inline element so it
+    will take only the width of the content and does not start from a new line. like this : no next line -->
+
+    <p style="background-color: lightgray;">First Paragraph</p>
+    <p style="background-color: aqua;">Second Paragraph</p>
+
+
+    <!-- List and complexity-->
+    <!-- ul>(li>p>a)*7-->
+    <ul>
+        <li>
+            <p><a href=""></a>A</p>
+        </li>
+        <li>
+            <p><a href=""></a>B</p>
+        </li>
+        <li>
+            <p><a href=""></a>C</p>
+        </li>
+        <li>
+            <p><a href=""></a>D</p>
+        </li>
+        <li>
+            <p><a href=""></a>E</p>
+        </li>
+        <li>
+            <p><a href=""></a>F</p>
+        </li>
+        <li>
+            <p><a href=""></a>G</p>
+        </li>
+    </ul>
+
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+        <li>G</li>
+    </ul>
+
+    <ul>
+        <li>
+            <p>A</p>
+        </li>
+        <li>
+            <p>B</p>
+        </li>
+        <li>
+            <p>C</p>
+        </li>
+        <li>
+            <p>D</p>
+        </li>
+        <li>
+            <p>E</p>
+        </li>
+        <li>
+            <p>F</p>
+        </li>
+        <li>
+            <p>G</p>
+        </li>
+    </ul>
+
+    <!-- ul>(li>p>a)*7 it will automatically convert into full code of ul with li and p and a tag inside it. like this : -->
+
+    <ul>
+        <li>
+            <p><a href="https:www.google.com">A</a>A</p>
+        </li>
+        <li>
+            <p><a href="https:www.google.comhttps:www.google.com">B</a>B</p>
+        </li>
+        <li>
+            <p><a href="">C</a>C</p>
+        </li>
+        <li>
+            <p><a href="">D</a>D</p>
+        </li>
+        <li>
+            <p><a href="">E</a>E</p>
+        </li>
+        <li>
+            <p><a href="">F</a>F</p>
+        </li>
+        <li>
+            <p><a href="">G</a>G</p>
+        </li>
+
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Login Page</a></li>
+            </ul>
+        </nav>
+        <!-- HOmework-->
+        <!-- How to create a navigation bar in HTML -->
+        <!-- how to remove default styling from ul and li -->
+        <!-- how to make bookmark-->
+
+</body>
+
+</html>

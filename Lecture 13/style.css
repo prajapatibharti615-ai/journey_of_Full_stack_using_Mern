@@ -1,0 +1,23 @@
+p {
+    text-align: center;
+}
+
+h1 {
+    font-style: italic;
+    background-color: lightblue;
+}
+
+.paraClass {
+    color: red;
+    text-align: left;
+}
+
+p,
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#abc {
+    color: blue;
+    text-align: right;
+}

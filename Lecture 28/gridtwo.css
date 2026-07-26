@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(59, 57, 57);
+    display: grid;
+    /* grid-template-columns: repeat(1, 300px); */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(4, 200px); */
+    grid-template-rows: repeat(4, 200px);
+    gap: 0.4rem;
+    padding: 4rem;
+    border: 2px solid white;
+    /* justify-items: start; */
+    /* justify-items: end; */
+    /* justify-items: stretch; */
+    /* align-items: center;
+    align-items: start; */
+    /* align-items: end; */
+    /* align-items: stretch; */
+    place-items: center;
+
+
+
+
+
+
+}
+
+.item {
+    height: 50px;
+    width: 100px;
+    background-color: rgb(59, 198, 52);
+    border: 5px solid rgb(217, 202, 202);
+    /* justify-self: start; */
+    /* justify-self: end; */
+    /* justify-self: center; */
+    /* justify-self: stretch; */
+    /* align-self: end; */
+    /* align-self: center; */
+    /* align-self: stretch; */
+    /* place-self: center; */
+    /* place-self: stretch; */
+
+}
+
+/* Homework - Apply Grid-row
+grid-column */
