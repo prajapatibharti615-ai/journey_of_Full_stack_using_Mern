@@ -1,0 +1,18 @@
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+#fbutton {
+    background-color: aqua;
+    width: 10rem;
+    height: 2rem;
+}
+
+#box2 {
+    width: 100px;
+    height: 200px;
+    /* background-color: magenta; */
+    border: 2px solid black;
+}
